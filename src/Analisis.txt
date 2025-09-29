@@ -1,0 +1,24 @@
+Análisis del código base:
+
+- Explicar cómo se utiliza la herencia en las clases `Automovil` y `Bicicleta`.}
+    En ambas clases se hereda la clase abstracta Vehículo, por lo que les permite reutilizar
+    atributos como marca, modelo y anio, y el método obtenerDetalles(). Para cada subclase se
+    debe de implementar el método abstracto mover() de la clase Vehiculo. La herencia
+    que se aplica para ambas clases asegura que ambas se comporten como un 'Vehículo'.
+
+- Identificar dónde se aplica el polimorfismo en el método `mover()` y `obtenerDetalles()`.
+    El polimorfismo se aplica cuando se llama a un mismo método, como mover y obtenerDetalles,
+    para diferentes tipos de vehículos. La implementación dependerá de la clase concreta en la
+    que se invoca el método (un automóvil conduce y una bicicleta pedalea).
+
+- Describir el uso de la palabra clave `super` en el código y su propósito.
+    La palabra clave 'super' se usa en las clases Automovil y Bicicleta dentro del constructor y
+    en el método obtenerDetalles. Para los constructores funciona para llamar al constructor de
+    Vehiculo y asignar atributos comunes para ambos constructores. Y en obtenerDetalles(), se
+    hace uso para reutilizar la versión de Vehiculo y luego añadir detalles concretos de
+    la subclase.
+
+- Explicar el rol de la interfaz `Combustible` y por qué solo `Automovil` la implementa.
+    Esta interfaz expresa un ajuste o acuerdo para los vehículos que usan combustible.
+    Para este caso, se implementa solamente en Automovil debido a que Bicicleta no necesita
+    combustible. Esto facilita la diferenciación de los vehículos con y sin motor de combustión.
