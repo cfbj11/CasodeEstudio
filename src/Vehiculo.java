@@ -4,6 +4,7 @@ abstract class Vehiculo {
     protected String modelo;
     protected int anio;
 
+    // Constructor de la clase Vehiculo
     public Vehiculo(String marca, String modelo, int anio) {
         this.marca = marca;
         this.modelo = modelo;

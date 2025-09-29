@@ -4,13 +4,13 @@ public class SistemaVehiculos {
         // Crear instancias de vehiculos
         Vehiculo auto = new Automovil("Toyota", "Corolla", 2022, 40.0);
         Vehiculo bici = new Bicicleta("Trek", "Mountain", 2022, 21);
-        Vehiculo moto = new Motocicleta("Ducati", "Panigale", 2025, 1103);
+        Vehiculo moto = new Motocicleta("Ducati", "Panigale", 2025, 250, 20.0);
 
         // Probar polimorfismo
         auto.mover();
         System.out.println(auto.obtenerDetalles());
         ((Combustible) auto).recargarCombustible();
-        System.out.println("Nivel de combustible:" + ((Combustible) auto).obtenerNivelCombustible());
+        System.out.println("Nivel de combustible: " + ((Combustible) auto).obtenerNivelCombustible());
 
         bici.mover();
         System.out.println(bici.obtenerDetalles());
@@ -20,5 +20,13 @@ public class SistemaVehiculos {
         System.out.println(moto.obtenerDetalles());
         ((Combustible) moto).recargarCombustible();
         System.out.println("Nivel de combustible: " + ((Combustible) moto).obtenerNivelCombustible());
+
+        // Probar mantenimiento de los vehículos que implementan la interfaz Mantenimiento
+        if (auto instanceof Mantenimiento) {
+            ((Mantenimiento) auto).realizarMantenimiento();
+        }
+        if (moto instanceof Mantenimiento) {
+            ((Mantenimiento) moto).realizarMantenimiento();
+        }
     }
 }

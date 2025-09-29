@@ -1,10 +1,10 @@
-// Nueva clase Motocicleta, hereda Vehiculo e implementa la interfaz Combustible
-class Motocicleta extends Vehiculo implements Combustible {
+// Nueva clase Motocicleta, hereda Vehiculo e implementa la interfaz Combustible y Mantenimiento
+class Motocicleta extends Vehiculo implements Combustible, Mantenimiento {
     private int cilindrada; // Atributo adicional
     private double nivelCombustible;
 
     // Constructor de clase Motocicleta que hereda atributos de clase Vehiculo
-    public Motocicleta(String marca, String modelo, int anio, int cilindrada) {
+    public Motocicleta(String marca, String modelo, int anio, int cilindrada, double nivelCombustible) {
         super(marca, modelo, anio);
         this.cilindrada = cilindrada;
         this.nivelCombustible = nivelCombustible;
@@ -38,5 +38,11 @@ class Motocicleta extends Vehiculo implements Combustible {
     @Override
     public double obtenerNivelCombustible() {
         return nivelCombustible;
+    }
+
+    // Implementación de la interfaz Mantenimiento en la clase Motocicleta
+    @Override
+    public void realizarMantenimiento() {
+        System.out.println("Cambiando aceite de la motocicleta: " + marca + " " + modelo + ".");
     }
 }
