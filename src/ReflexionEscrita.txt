@@ -1,0 +1,10 @@
+Reflexión Escrita
+
+El polimorfismo es una de las características más esenciales dentro de la programación orientada a objetos debido a
+que permite que un mismo método se comporte y sea aplicado de manera diferente según el tipo de objeto que lo
+invoque. En este caso, para el sistema de vehículos, se facilita la extensibilidad porque es posible agregar nuevas
+clases como Motocicleta sin necesidad de modificar el código existente, solamente se sobreescribe los métodos de la
+clase base o se implementan las interfaces. Además, mediante el uso de interfaces como Combustible y Mantenimiento,
+se puede definir comportamientos adicionales que no afectan a todos los vehículos, y se integran en aquellos que
+lo necesitan. Esto garantiza un diseño flexible, mantenible y capacitado para futuras ampliaciones sin modificar
+la estructura del sistema.
