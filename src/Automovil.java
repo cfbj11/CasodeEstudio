@@ -41,6 +41,6 @@ class Automovil extends Vehiculo implements Combustible, Mantenimiento {
     // Implementación de la interfaz Mantenimiento en la clase Automovil
     @Override
     public void realizarMantenimiento() {
-        System.out.println("Revisando motor del automóvil " + marca + " " + modelo + ".");
+        System.out.println("Revisando motor del automóvil: " + marca + " " + modelo + ".");
     }
 }

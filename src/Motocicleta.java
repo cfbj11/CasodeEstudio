@@ -30,7 +30,7 @@ class Motocicleta extends Vehiculo implements Combustible, Mantenimiento {
     // Metodo de interfaz combustible
     @Override
     public void recargarCombustible() {
-        nivelCombustible = 20.0;
+        nivelCombustible = 30.0;
         System.out.println("La motocicleta " + marca + " " + modelo + " ha sido recargada con combustible.");
     }
 
