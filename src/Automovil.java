@@ -1,3 +1,4 @@
+// Clase que representa un Automóvil, hereda de Vehiculo e implementa Combustible
 class Automovil extends Vehiculo implements Combustible {
     private double nivelCombustible;
 

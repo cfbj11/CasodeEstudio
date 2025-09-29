@@ -1,3 +1,4 @@
+// Clase que representa una Bicicleta, hereda de Vehiculo
 class Bicicleta extends Vehiculo {
     private int numeroMarchas;
 
@@ -13,6 +14,6 @@ class Bicicleta extends Vehiculo {
 
     @Override
     public String obtenerDetalles() {
-        return super.obtenerDetalles() + ", Marchas:" + numeroMarchas;
+        return super.obtenerDetalles() + ", Marchas: " + numeroMarchas;
     }
 }
